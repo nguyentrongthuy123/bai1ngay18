@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bài tập 1. kiểm tra xem a có chia hết cho b ko -->
+    <input type="number" id="a" placeholder="số a">
+    <input type="number" id="b" placeholder="số b">
+    <button onclick="kiemTraChiaHet()">Kết quả</button>
+    <p id="ketqua"></p>
+    
+    <script>
+      function kiemTraChiaHet() {
+        const a = parseInt(document.getElementById("a").value);
+        const b = parseInt(document.getElementById("b").value);
+    
+        if (b == 0) {
+          console.log("Không thể chia cho 0");
+          return;
+        }
+    
+        if (a % b == 0) {
+          console.log("chia het");
+        } else {
+          console.log("khong chia het");
+        }
+      }
+    </script>
+</body>
+</html>
